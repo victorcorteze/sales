@@ -14,7 +14,7 @@ import java.util.List;
 public class VeiculoClient {
 
     private final RestTemplate restTemplate;
-    @Value("${vehicle.service.url}")
+    @Value("${vehicle.service.url:localhost}")
     private String veiculoServiceUrl;
 
     public VeiculoClient(RestTemplate restTemplate) {
@@ -25,7 +25,6 @@ public class VeiculoClient {
         String url = veiculoServiceUrl;
         log.info("Fetching vehicles from URL: {}", url);
         try {
-            restTemplate.getForEntity(url, VeiculoResponse[].class).getBody();
             List<VeiculoResponse> response = List.of(restTemplate.getForEntity(url, VeiculoResponse[].class).getBody());
             log.info("Response from vehicle service: {}", response);
             return response;
