@@ -1,7 +1,7 @@
 # 🛒 Sales API
-É uma aplicação desenvolvida em Java com Spring Boot para gerenciar vendas de veículos. Ela oferece endpoints REST para registrar vendas, atualizar status de pagamento via webhook e listar veículos disponíveis ou vendidos. A aplicação utiliza um banco de dados H2 e suporta execução local ou em contêineres Docker. Além disso, conta com integração contínua e deploy automatizado utilizando GitHub Actions e AWS App Runner.
 
 ## Descrição do Projeto
+É uma aplicação desenvolvida em Java com Spring Boot para gerenciar vendas de veículos. Ela oferece endpoints REST para registrar vendas, atualizar status de pagamento via webhook e listar veículos disponíveis ou vendidos. A aplicação utiliza um banco de dados H2 e suporta execução local ou em contêineres Docker. Além disso, conta com integração contínua e deploy automatizado utilizando GitHub Actions e AWS App Runner.
 
 ---
 
